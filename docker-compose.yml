@@ -22,3 +22,5 @@ services:
         expose: ["8080", "8000"]
         links:
             - database:database
+         environment:
+            - JAVA_OPTS=-Duser.timezone=America/Recife
